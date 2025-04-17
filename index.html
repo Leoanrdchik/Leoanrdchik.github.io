@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор рецепта</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Калькулятор рецептов</h2>
+    <p>лео пишет крутой описание</p>
+    <details>
+        <summary>инструкция</summary>
+        <ol>
+            <li>тут</li>
+            <li>leonard</li>
+            <li>yamaev</li>
+            <li>написал</li>
+            <li>krutoе</li>
+            <li>описание</li>
+            <li>для пет проекта</li>
+        </ol>
+        <p><em>тут крутое описание инструкции, если нажать на кнопку <br>
+            то отправиться сообщение админу <a href="https://t.me/tripppflameee">тг автора</a>
+        </em></p>
+    </details>
+    <fieldset>
+        <legend>изменить размер текста</legend>
+        <div class="d-flex fsize">
+            <button id="minus">-</button>
+            <button id="plus">+</button>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Добавить ингредиенты</legend>
+        <div class="list">
+            <div class="item d-flex">
+                <input type="text" placeholder="название" class="item_name">
+                <input type="text" placeholder="Кол-во" class="item_count">
+                <select class="item_type">
+                    <option value="г.">г.</option>
+                    <option value="кг.">кг.</option>
+                    <option value="мл.">мл.</option>
+                    <option value="л">л"</option>
+                    <option value="ч.л">ч.л</option>
+                    <option value="ст.л">ст.л</option>
+                    <option value="шт">шт</option>
+                </select>
+            </div>
+        </div>
+        <button class="add_btn">Добавить</button>
+        <div class="recipe"></div>
+    </fieldset>
+    <fieldset>
+        <legend>изменить рецепт</legend>
+        <div class="result_recipe"></div>
+        <div class="d-flex">
+            <select class="item_ratio_type">
+                <option value="1">уменьшить во сколько раз</option>
+                <option value="2">увеличить во сколько раз</option>
+            </select>
+            <input type="number" placeholder="4" value="4" class="item_ratio">
+        </div>
+        <button class="button_result">вычислить</button>
+    </fieldset>
+    <fieldset>
+        <legend>рецепт</legend>
+        <div class="copy">
+            <h3 class="recipe_name" title="Нажмите, чтобы ввести название рецепта">Нажмите, чтобы ввести название рецепта</h3>
+            <div class="result_new_recipe"></div>
+        </div>
+        <button id="copy_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
+              </svg>
+        </button>
+    </fieldset>
+    <script src="main.js"></script>
+</body>
+</html>
